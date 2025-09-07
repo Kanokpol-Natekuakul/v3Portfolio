@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primaryTitle: #1976d2;
+  --color-primaryContent: #1565c0;
+  --color-primarySubcontent: #2196f3;
+  --color-primaryBase: #cbe7ff ;
+  --color-primaryAccent: #64b5f6;
+  --color-primaryBg: #e3f2fd;
+}
+/* Responsive Design */
+
+
+@layer base {
+  body {
+    margin: 0;
+    @apply bg-primaryBg;
+    @apply text-primaryContent;
+  }
+}
+
+@keyframes append-animate {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.new-arrow {
+  animation: append-animate 0.5s ease-out;
+}
