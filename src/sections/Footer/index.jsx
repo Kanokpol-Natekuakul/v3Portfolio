@@ -6,10 +6,7 @@ const Footer = () => {
         <div className="mb-10">
             <div className="flex justify-end">
                 
-                    <span>
-                        Powered by React.js and Tailwind
-                        
-                    </span>
+                    
                 
             </div>
         </div>

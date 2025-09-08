@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import LeftSection from './sections/LeftSection'
 import RightSection from './sections/RightSection'
+import BackToTop from './conponents/BackToTop';
 
 function App() {
   const [sectionIds, setSetionIds] = useState([]);
@@ -54,10 +55,13 @@ function App() {
   }, [sectionIds])
 
   return (
+    <>
     <div className='mt-14 mx-auto max-w-6xl grid gap-y-5 px-4 sm:px-6 lg:px-0 lg:grid-cols-[40%_60%]'>
       <LeftSection navBarItems={navBarItems} currentSection={currentSection} />
       <RightSection onInitial={addSectionIds} />
     </div>
+    <BackToTop navBarItems={navBarItems} />
+    </>
   )
 }
 
