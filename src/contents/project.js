@@ -113,7 +113,7 @@ export const data = [
             
         ],
         skills: [
-            ["Html ", "Css ", "javascript"],
+            ["HTML ", "CSS ", "Javascript"],
             
         ],
         picture: port,
